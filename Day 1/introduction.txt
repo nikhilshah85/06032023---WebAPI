@@ -1,0 +1,92 @@
+WebAPI - REST Standards
+
+WebAPI is all about data
+A web api developer should know
+	a. developer a WebAPI - with CRUD Operations
+	b. Consume webapi - developed by others (client / other team)
+		Client Side - Jquery / fetch / ajax 
+		Servde Side - C#
+
+		Features like
+		Dependency Injection
+		ORM Pattern (Entity framework core)
+		Repository Pattern
+--------------------------------------------------------------------
+Name:
+Experience:
+WebAPI Experience: Fresher / Have worked on It
+Expectations from traing :
+------------------------------------------------------------------------------------
+Pre-req
+
+a. C# with OOPS - HTML CSS and JS
+b. Software setup
+	Visual Studio 2019 / 2022
+	SQL Server 2014 or above with SSMS
+
+	a. Either have them insalled on ur machine
+	b. Cognizant cloud lab
+	
+
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+			WebAPI 
+
+1. This is a framework based on REST standards
+	Representational State Transter
+2. WebAPI is also know as RESTFUL services
+
+3. WebAPi is all about data 
+	Share - Consume data
+
+4. Is a better version / Replacement to 
+	WebServices (XML- SOAP Message)
+	SOAP - Simple Object Access Protocol
+		Use to be very heavy - more of metadata than data
+		Which is not suitable in todays slow internet world
+
+5. WebAPI uses JSON - Javascript Object Notation for data exchange
+	JSON is light weight - fast and compatible with all the platforms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

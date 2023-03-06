@@ -1,0 +1,16 @@
+
+For You
+
+1. install git
+2. git clone https://github.com/nikhilshah85/06032023---WebAPI.git
+3. git pull
+------------------------------------------------------------------------------------
+
+for me 
+1. install git
+2. git clone https://github.com/nikhilshah85/06032023---WebAPI.git
+3. git add (this will add all the files to be pushed to git hub, all the changed file(newly added and edited, also deleted)
+4. git commit -m "Day 1 - getting started"
+5. git push 
+
+----------------------------------------------
