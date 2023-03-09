@@ -1,0 +1,57 @@
+Todays applications : Shopping application 
+With Entity Framework and sql server
+
+Steps
+1. Create a new database and add a table with sample data to the table
+2. create a new WebAPI appication in Visual studio
+3. Applcation does not know anything about EF, thus we will have to install nuget packages
+	install 4 nuget packages in sequence
+	right click solution explorer -> Manage nuget packages -> Browse 		
+		Type EntityFrameworkCore
+
+		Microsoft.EntityFrameworkCore.Tools
+		Microsoft.EntityFrameworkCore.Design
+		Microsoft.EntityFrameworkCore
+		Microsoft.EntityFrameworkCore.SqlServer
+
+4. Tools -> Nuget Package Manager - Packaege manager console
+
+Scaffold-DbContext "server=(localdb)\MSSQLLocalDB;database=shoppingAPI_DB;integrated security=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF
+
+5. Check the newly created Models folder which will have EF folder and POCO classes (Plain C# Objects)
+	build the application
+6. Right click on controller folder, add new controller, api, Api Controller with actions useing EF 
+	in the window - choose table name as Model file and database name as context file
+
+	build the application
+
+7. This will create the controller with all the CRUD operations, HTTPGET, HTTPPUT, HTTPPOST, HTTPDELETE
+
+8. This used Dependency Injection by default, but we will remove it as we do not know what is DI, 
+	thus instantiate new object of DBcontext 
+
+	Line 16. 
+	private readonly ShoppingApiDbContext _context = new ShoppingApiDbContext();
+
+	Line 18 to 21
+	Comment the constructor
+
+9. Build the application and run the application, you will be able to perform all the operations not, perform the same and check the 
+	table data in database server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

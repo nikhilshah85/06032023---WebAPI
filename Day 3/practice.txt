@@ -1,0 +1,24 @@
+
+
+Practice :
+
+Create a new database - EmployeeManagementDB_API
+add below tables
+
+	deptInfo
+		deptNo (PK)
+		deptName
+		deptHead
+		deptLocation
+	employeeInfo
+		empNo (PK)
+		empName
+		empDesigantion
+		empSalary
+		empIsPermenant
+
+	add sample data to both the tables
+
+=================
+	create new webapi application - use EF Core to perform CRUD operations on the above 	tables	
+			
