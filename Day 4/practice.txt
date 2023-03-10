@@ -1,0 +1,7 @@
+Try :
+	implement EF Core in the same project for shoppingDB we created yesterday, 
+	DB has 2 tables, and thus we will need 2 controllers
+
+	Create the controllers with EF 
+	and configure DI for the same 
+		(Good news, VS will configure the DI in controller by default, u only need to to update the prog.cs)

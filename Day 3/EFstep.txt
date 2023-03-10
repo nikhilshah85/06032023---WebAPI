@@ -1,0 +1,81 @@
+Todays App and Feature :
+	Entity Framework Core : this is a framework based on ORM design pattern
+		ORM - Object Relational Mapping
+			it maps your tables to classes
+			it maps columns to properties and data types
+			it maps constraints to validations
+			it maps relationships between tables
+
+
+App : ASP.Net Core MVC shoppingAPP - with Entity Framework Core and SQL Server
+
+step 1 : create a database - add tables with same data
+step 2 : create a new ASP.net core MVC APP
+step 3 : we need to add nuget packages to use EF Core - as application does not have any references to the same
+	solution explorr -> right click -> Manage nuget packages -> Browse -> EntityFrameworkCore
+
+		Microsoft.EntityFrameworkCore.Tools
+		Microsoft.EntityFrameworkCore.Design
+		Microsoft.EntityFrameworkCore
+		Microsoft.EntityFrameworkCore.SqlServer
+
+step 4 : Tools -> Nuget package manager -> Nuget package manager console -> execute the command ScDbContext
+
+	Scaffold-DbContext "server=(localdb)\MSSQLLocalDB;database=shoppingAPP;integrated security=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF
+
+step 5 : right click controller folder -> Add new controller - MVC Controller with actions useing EF
+
+	choose table name as model
+	choose datbasename as context
+
+step 6 : in the controller file, it tries to use Dependency Injection by default, but it will need to be configured
+	and thus we would not use DI
+
+	we will instantiate new object of context 
+	Line 14:
+	private readonly ShoppingAppContext _context = new ShoppingAppContext();
+
+	Line 16 to 19 - comment the constructor
+
+step 7: update the layout page, add a new link to Index page of the new controller
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

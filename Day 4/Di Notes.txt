@@ -1,0 +1,63 @@
+Day 4: Implement Dependency Injection in WebAPI
+
+	What is Dependency Injection - ? 
+
+	As a developer we have been createing new object - new keyword
+		but we never wrote code to destroy the object - detete the object - release it from memory
+			we are suppose to write - Destructor
+						- IDisposable interface
+	
+		Because - we think Garbage collector will come and do it for us
+
+	---------------------------
+		This does not help in today situation because
+			Users keeps on increasing
+			No of request keeps on increasing 
+---------------------------------------------------------------------------------------------------------------------------
+
+	1. Now on, Runtime will create the objects for you, you do not need to, and also runtime will destroy the same
+	2. Runtime will take care of shareing the objects with other users
+
+		We are been give 3 methods to implement DI 	
+
+			a. AddTranscient(typeof(model)) 
+				AddTranscient(typeof(Employee)) 
+			- this will create a new object, process the response and destroy the object
+				- new object - Per call
+
+			b. AddScoped(typeof(model))
+				AddScoped(typeof(Employee))
+			-this will create a new object for every user, use the same object for that user, destroy the object when user 				goes (logout, session time out etc..) 
+				- new object - per session - per user
+
+			c. AddSingleTon(typeof(model))
+				AddSingleTon(typeof(Employee))
+			-this will create 1 new object when server starts, and same object is used throught the server cycle, it will 				be destroyed when server restart
+				- new object - shared with all the user
+
+
+
+
+		---------------- recommended usage
+			use transcient for dynamic data - where data changes a data - eg. stock rates, currency exchange etc....
+			use scoped when data is user specific - eg. Bank Account login
+			use singleton - same data is to be shared with all the users (this is mostly static data) -
+						eg. Railway timeschedule, flight schedule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
