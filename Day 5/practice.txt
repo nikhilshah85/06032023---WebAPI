@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+							Practice :
+
+Display Comments data
+https://jsonplaceholder.typicode.com/comments
+
+Logical Task:
+https://jsonplaceholder.typicode.com/users
+
+Name Email City Lat Lng CompanyName CompanyCatchPhase

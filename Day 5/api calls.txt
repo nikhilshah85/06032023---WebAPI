@@ -1,0 +1,22 @@
+What is WebAPI development 
+How to develope a webapi
+Develop webapi with in memory collection
+Develop webapi with with EF Core and SQL Server - CRUD Operations
+Develop webapi with with DI Injection
+	services
+=============================================
+	WebAPI developer - Middleware
+	WebAPI Developer - Consumer
+
+------------
+	How to consume webapi in your application (any application)
+	2 Modes
+		a. Client Side - Javascript, JQuery, Angular, react, MVC (view part) - fetchapi
+				fetch api - is a standard api built into every new browser
+		b. Server Side - C#
+
+		Both of below are standards
+
+			fetch api  - is the fastest way to get the data (less secure)
+			HttpClient - is the safest way to get the data (a little bit slower)		
+		
