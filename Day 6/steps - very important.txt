@@ -1,0 +1,54 @@
+step 1: Create a Model of data you are going to read
+	i.e Class with all the properties of data which is going to come from url
+	(in our example, PostDataModel Class in Models folder with properties
+step 2: Create an variable of type of data which is going to come
+	 List<PostDataModel> pList = new List<PostDataModel>();
+
+step 3: Create an Method which will read and return the data, the above variable from step 2
+	
+step 4 : inside the method create a new obj of HttpClient, and write the code
+
+step 5: install nuget package 
+	Microsoft.AspNet.WebApi.Client
+
+step 6: create a MVC controller which will call the method from model
+	in our case, SecureApiCallsController in the controller folder
+
+step 7: import the Models folder on top 
+	using HttpClientCalls.Models;
+
+step 8 : in the action method make a call and read the data in a ViewBag
+	public IActionResult PostData()
+        {
+            ViewBag.post = pObj.GetPostData();
+            return View();
+        }
+
+step 9: Create a view, right click on PostData(), add View, Empty Razor view
+
+step 10 : write the code in view to display the data
+	<table>
+    @foreach (var item in ViewBag.post)
+    {
+     <tr>
+         <td> @item.id </td>
+         <td> @item.userId </td>
+         <td> @item.title </td>
+         <td> @item.body </td>
+
+     </tr>   
+    }
+</table>
+
+step 11: update the layout page in shared folder 
+	you need to add a new hyperlink for the new page created
+	    <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SecureApiCalls" asp-action="PostData">Post</a>
+                        </li>
+
+step 12: build and run the application, click on post to see the data, it should be successful
+
+step 13: configure DI in the controller file
+
+
+

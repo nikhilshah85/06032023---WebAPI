@@ -1,0 +1,19 @@
+REST - Representational State transfer
+	This is managed by w3C and ECMA for web standards 
+		for exchange of data in a stanard way
+		They define standards which is to be followed by web - Microsoft, sunmicrosystems, HP, IBM, Google, Apple
+		They replaced SOAP with JSON 
+
+		They lay down the standars to exchange data for everyone
+		Microsoft Followed this standards
+			Created compileers, classes, methods, everything
+			and called it as WebAPI
+
+		WebAPI is an implementation of RESTFul Standards
+		They also lay down the standard to consume WebAPI
+
+		2 Ways 
+		Client Side -  This is fastest - less secure - not for sencetive data - bank account, cc, payment gateway, etc.
+			fetch api
+		Serverr Side - This is safest - for sencetive data - for security
+			HttpClient
