@@ -1,0 +1,15 @@
+CORS - Cross Origin Resource Shareing
+	When 2 domains wants to exchange content / (data in our case) - there should be rights established otherwise 
+			calls are blocked
+
+	with .net core we can have CORS policy to define which website gets to access which contents
+
+	with .net core we have to configure the service for the same and add a middleware
+
+-----------------------------------
+	steps for demo
+	step 1: Have a database with sample tables
+	step 2 : create a new webapi application with EF Core and SQL Server
+	step 3: create a new MVC application and try to make a get call using fetch api 
+	step 4: read the errors
+	step 5: configure cors policy and then check the output
